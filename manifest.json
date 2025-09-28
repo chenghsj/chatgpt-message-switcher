@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "Message Switcher for ChatGPT/Gemini/DeepSeek/Grok/Claude",
+  "name": "Message Switcher for ChatGPT/Gemini/DeepSeek/Claude",
   "description": "A simple plugin that lets you easily navigate through user or assistant messages using up and down buttons.",
   "background": {
     "service_worker": "src/pages/background/index.ts",
@@ -16,7 +16,6 @@
         "https://chatgpt.com/*",
         "https://gemini.google.com/*",
         "https://chat.deepseek.com/*",
-        "https://grok.com/*",
         "https://claude.ai/*"
       ],
       "js": ["src/pages/content/index.tsx"],

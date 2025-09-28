@@ -12,9 +12,8 @@ export function useGetElementByOrigin(role: ChatNodeRoleType): Element[] {
 
     const classNames: Partial<Record<typeof siteOrigin, string>> = {
       gemini: role === 'user' ? 'query-content' : 'model-response-text',
-      deepSeek: role === 'user' ? 'fbb737a4' : 'f9bf7997',
-      grok: 'message-bubble',
-      claude: role === 'user' ? 'font-user-message' : 'font-claude-message',
+      deepSeek: role === 'user' ? '_9663006' : '_43c05b5',
+      claude: role === 'user' ? '!font-user-message' : 'font-claude-response',
     };
 
     const getElementsByAttribute = () => {
@@ -27,12 +26,6 @@ export function useGetElementByOrigin(role: ChatNodeRoleType): Element[] {
       const foundElements = Array.from(
         document.getElementsByClassName(classNames[siteOrigin] || '')
       );
-
-      if (siteOrigin === 'grok') {
-        return foundElements.filter((_, index) =>
-          role === 'user' ? index % 2 === 0 : index % 2 === 1
-        );
-      }
 
       return foundElements;
     };

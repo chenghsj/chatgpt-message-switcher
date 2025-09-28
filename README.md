@@ -8,7 +8,6 @@
 - ChatGPT
 - Gemini
 - Claude
-- Grok
 - DeepSeek
 
 ## How to use

@@ -37,8 +37,7 @@ export const ChatNodeList: React.FC<ChatNodeProps> = () => {
       gemini:
         document.querySelector('[data-test-id="chat-history-container"]') ||
         undefined,
-      deepSeek: document.getElementsByClassName('_8f60047')[0],
-      grok: document.getElementsByClassName('scrollbar-gutter-stable')[0],
+      deepSeek: document.getElementsByClassName('_0f72b0b')[0],
       claude: document.getElementsByClassName('overflow-y-scroll')[0],
     };
 
